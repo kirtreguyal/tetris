@@ -1,0 +1,9 @@
+Create an environment with 20 rows 10 colums
+Give the user an initial position in the environment { x: 0, y: 3 } 
+
+Create an interval that will put the game in loop that will run every 1 second
+
+Get a random piece in the pieces array
+
+Render the environment using the random piece and the position of the user
+

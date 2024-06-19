@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tetris</title>
+        <style>
+            body {
+                background: black;
+            }
+
+            #tetris {
+                display: grid;
+                grid-template-columns: repeat(10, 30px);
+                grid-template-rows: repeat(20, 30px);
+                margin: auto;
+                border: 0.1px solid white;
+                width: fit-content;
+            }
+
+            .grid-item {
+                border: 1px solid white;
+            }
+
+            .grid-item[space="1"]{
+                background: pink;
+            }
+        </style>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="tetris"></div>
+    </body>
+</html>
