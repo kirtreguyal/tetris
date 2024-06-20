@@ -1,9 +1,28 @@
 Create an environment with 20 rows 10 colums
 Give the user an initial position in the environment { x: 0, y: 3 } 
 
-Create an interval that will put the game in loop that will run every 1 second
-
 Get a random piece in the pieces array
 
-Render the environment using the random piece and the position of the user
+START GAME
 
+While game is on going do this
+
+    Create an interval that will put the game in loop that will run every 1 second
+    Render the environment using a copy of the original environment
+
+    Check if the piece is not collided any piece to its future position(current_row + 1)
+    If collided
+        Add the piece to the original environment
+        Generate a new random piece 
+        Reset the position of the user
+    Else
+        Increment the user's x postion by 1
+
+        Check if the piece is not collided to any piece in its initial position
+        If collided
+            Reset Grid
+            Game Over
+END While
+
+
+Render the environment using the random piece and the position of the user
