@@ -13,14 +13,13 @@ While game is on going do this
     Check if the piece is not collided any piece to its future position(current_row + 1)
     If collided
         Add the piece to the original environment
-        Generate a new random piece 
+        Generate a new random piece
         Reset the position of the user
     Else
         Increment the user's x postion by 1
 
         Check if the piece is not collided to any piece in its initial position
         If collided
-            Reset Grid
             Game Over
 END While
 

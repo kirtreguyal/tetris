@@ -9,6 +9,18 @@
                 background: black;
             }
 
+            h1 {
+                color: #FD7099;
+                position: absolute;
+                display: none;
+                left: 567px;
+                margin: auto;
+            }
+
+            h2 {
+                color: #FD7099;
+            }
+
             #tetris {
                 display: grid;
                 grid-template-columns: repeat(10, 30px);
@@ -16,6 +28,17 @@
                 margin: auto;
                 border: 0.1px solid gray;
                 width: fit-content;
+            }
+
+            button {
+                margin: 10px    auto;
+                display: block;
+                background: rgb(167, 84, 98);
+                color: white;
+                padding: 8px 30px;
+                border: none;
+                font-size: medium;
+                border-radius: 5px;
             }
 
             .grid-item {
@@ -53,6 +76,9 @@
         <script src="index.js"></script>
     </head>
     <body>
+        <h1 id="game_over" hidden>Game Over!</h1>
+        <h2 id="score">Score: 0</h2>
         <div id="tetris"></div>
+        <button id="reset">Reset</button>
     </body>
 </html>
